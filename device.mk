@@ -30,9 +30,9 @@ $(call inherit-product, vendor/realme/RMX1931/RMX1931-vendor.mk)
 #     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # TODO :
-# # ANT+
-# PRODUCT_PACKAGES += \
-#     AntHalService-Soong
+# ANT+
+PRODUCT_PACKAGES += \
+    AntHalService-Soong
 
 # TODO :
 # Audio
@@ -132,9 +132,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.RMX1931
 
 # TODO :
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
+# # Media
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
 # TODO :
 # Net
@@ -151,12 +151,12 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay \
-    NotchBarKiller
+# TODO : Check if needed
+# PRODUCT_PACKAGES += \
+#     NoCutoutOverlay \
+#     NotchBarKiller
 
 # TODO :
 # Parts
