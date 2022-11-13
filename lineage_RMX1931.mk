@@ -12,7 +12,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX1931
-PRODUCT_DEVICE := RMX1931L1
+PRODUCT_DEVICE := RMX1931
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := RMX1931
 PRODUCT_MANUFACTURER := Realme
