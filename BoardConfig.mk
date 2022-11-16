@@ -94,7 +94,7 @@ BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 TARGET_KERNEL_SOURCE := kernel/realme/RMX1931
-TARGET_KERNEL_CONFIG := vendor/realme_sm8150-perf_defconfig
+TARGET_KERNEL_CONFIG := vendor/RMX1931-perf_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     LD=ld.lld AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip \
