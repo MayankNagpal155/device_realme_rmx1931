@@ -67,11 +67,9 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     fstab.qcom
 
-# TODO : Check which works and if needed
-# # Fstab
-# PRODUCT_COPY_FILES += \
-#     $(LOCAL_PATH)/vendor_overlay/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
-#     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor_overlay/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Device Characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
