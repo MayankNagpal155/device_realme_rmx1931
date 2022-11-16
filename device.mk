@@ -161,11 +161,11 @@ DEVICE_PACKAGE_OVERLAYS += \
 # TODO :
 # Parts
 PRODUCT_PACKAGES += \
-    RealmeProximityHelper \
-    RealmeParts
+    # RealmeParts \
+    RealmeProximityHelper
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/parts/init/realmeparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/realmeparts.rc
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/parts/init/realmeparts.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/realmeparts.rc
 
 
 # TODO : Urgent Check Power-Service
